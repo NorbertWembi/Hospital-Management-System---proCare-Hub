@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:jsp="http://java.sun.com/JSP/Page">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctors Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sidebar">
+  <h2>Hospital</h2>
+  <ul>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="patients.html">Patients</a></li>
+    <li><a href="doctors.html" class="active">Doctors</a></li>
+    <li><a href="#">Appointments</a></li>
+    <li><a href="#">Billing</a></li>
+    <li><a href="#">Records</a></li>
+    <li><a href="login.html">Logout</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h1>Doctors Management</h1>
+
+  <form action="doctors" method="post" class="form">
+    <h3>Add New Doctor</h3>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="specialty" placeholder="Specialty (e.g., Cardiologist)" required>
+    <input type="text" name="contact" placeholder="Contact Number" required>
+    <select name="availability" required>
+      <option value="">Availability</option>
+      <option value="Available">Available</option>
+      <option value="On Leave">On Leave</option>
+      <option value="In Surgery">In Surgery</option>
+    </select>
+    <button type="submit">Add Doctor</button>
+  </form>
+
+  <hr>
+
+  <h3>All Doctors</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Specialty</th>
+      <th>Contact</th>
+      <th>Availability</th>
+    </tr>
+    </thead>
+    <tbody>
+    <jsp:include page="/doctors" />
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

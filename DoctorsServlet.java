@@ -1,8 +1,8 @@
 package controllers;
 
-import database.DBConnection;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+import controllers.DBConnection;
+import javax.servlet.*;
+import javax.servlet.http.*;
 import java.io.*;
 import java.sql.*;
 

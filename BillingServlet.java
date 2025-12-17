@@ -1,6 +1,6 @@
 package controllers;
 
-import database.DBConnection;
+import controllers.DBConnection;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
