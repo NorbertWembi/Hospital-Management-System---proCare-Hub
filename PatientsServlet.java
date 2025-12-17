@@ -5,6 +5,9 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import java.sql.*;
+import dao.PatientDAO;
+import models.Patient;
+
 
 public class PatientsServlet extends HttpServlet {
 
