@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Servlet 1: controllers.LoginServlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controllers.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet 2: com.hospital.LoginServlet -->
+    <servlet>
+        <servlet-name>HospitalLoginServlet</servlet-name>
+        <servlet-class>controllers.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HospitalLoginServlet</servlet-name>
+        <url-pattern>/hospital-login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet 3: DashboardServlet -->
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>controllers.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PatientsServlet</servlet-name>
+        <servlet-class>controllers.PatientsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientsServlet</servlet-name>
+        <url-pattern>/patients</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoctorsServlet</servlet-name>
+        <servlet-class>controllers.DoctorsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorsServlet</servlet-name>
+        <url-pattern>/doctors</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AppointmentsServlet</servlet-name>
+        <servlet-class>controllers.AppointmentsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AppointmentsServlet</servlet-name>
+        <url-pattern>/appointments</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BillingServlet</servlet-name>
+        <servlet-class>controllers.BillingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BillingServlet</servlet-name>
+        <url-pattern>/billing</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MedicalRecordsServlet</servlet-name>
+        <servlet-class>controllers.MedicalRecordsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MedicalRecordsServlet</servlet-name>
+        <url-pattern>/medical_records</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReportsServlet</servlet-name>
+        <servlet-class>controllers.ReportsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReportsServlet</servlet-name>
+        <url-pattern>/reports</url-pattern>
+    </servlet-mapping>
+
+</web-app>
