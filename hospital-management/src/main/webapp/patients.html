@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:jsp="http://java.sun.com/JSP/Page">
+<head>
+  <meta charset="UTF-8">
+  <title>Patients Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sidebar">
+  <h2>Hospital</h2>
+  <ul>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="patients.html" class="active">Patients</a></li>
+    <li><a href="#">Doctors</a></li>
+    <li><a href="#">Appointments</a></li>
+    <li><a href="#">Billing</a></li>
+    <li><a href="#">Records</a></li>
+    <li><a href="login.html">Logout</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h1>Patient Management</h1>
+
+  <form action="patients" method="post" class="form">
+    <h3>Add New Patient</h3>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="number" name="age" placeholder="Age" required>
+    <select name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <input type="text" name="contact" placeholder="Contact Number" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <button type="submit">Add Patient</button>
+  </form>
+
+  <hr>
+
+  <h3>All Patients</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Contact</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Patient rows will be injected dynamically by servlet -->
+    <jsp:include page="/patients" />
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
