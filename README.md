@@ -58,8 +58,10 @@ The application aligns with the **CIA Triad**—**Confidentiality, Integrity, an
 ## Future Enhancements
 
 * Make the same implementation but with C# and ASP.NET framework
-* Audit logging for enhanced security monitoring
-* REST API support for mobile application integration
+* Deploy the application on AWS EC2
+* Enhance the Role-Based Access Control
+* Set the Multi-Factors authentication
+* Perform input validation and SQL Injection protection
 
 
 ## Author
