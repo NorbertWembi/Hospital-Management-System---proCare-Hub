@@ -53,6 +53,7 @@ The application aligns with the **CIA Triad**—**Confidentiality, Integrity, an
 * Supports remote access to healthcare records
 * Enhances hospital workflow efficiency
 * Designed with security best practices in mind
+* Add a predictive model for appointments based on patients needs
 
 
 ## Future Enhancements
